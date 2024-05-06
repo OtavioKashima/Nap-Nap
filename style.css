@@ -1,0 +1,85 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://img.freepik.com/fotos-premium/ilustracao-de-pintura-digital-de-cena-de-paisagem-com-belas-montanhas-verdes-prados-arvores_467123-4548.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  background-color: #0D2B62;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="password"] {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  color: #0D2B62;
+  padding: 10px 20px;
+  border: 2px solid #0D2B62;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #000080;
+  color: white;
+}
+
+a.button {
+  background-color: transparent;
+  color: #0D2B62;
+  padding: 10px 20px;
+  border: 2px solid #0D2B62;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background-color: #000080;
+  color: white;
+}

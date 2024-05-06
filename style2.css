@@ -1,0 +1,93 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.pinimg.com/originals/66/98/bc/6698bc2d735eaf119fa95ec03cb7a1e6.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+}
+
+/* Form Styles */
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Error Messages */
+
+.error {
+  color: #red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

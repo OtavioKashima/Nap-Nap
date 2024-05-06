@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nap Nap</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos para telas menores */
+    @media only screen and (max-width: 400px) {
+     .box {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+      }
+     .container {
+        width: 100%;
+        padding: 20px;
+      }
+      h1, h2 {
+        font-size: 18px;
+      }
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+     .button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="container">
+      <h1>Nap Nap</h1>
+      <p>Quer dormir na escola? Ta no lugar certo</p>
+      <h2>Ja tem uma conta?</h2>
+      <form>
+        <input type="text" id="name" name="name" placeholder="Nome:">
+        <input type="password" id="password" name="password" placeholder="Senha:">
+        <h1><input type="submit" value="Log in"></h1>
+      </form>
+      <h2>Não tem uma conta?</h2>
+      <a href="create-account.html" class="button">Crie uma conta</a>
+    </div>
+  </div>
+</body>
+</html>
