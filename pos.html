@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,42 +8,76 @@
     <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-  <header>
-    <h1 style="position: absolute; top: 0; left: 0; margin: 10px;">Nap Nap</h1>
-    <i class="bi bi-person-circle" style="font-size: 25px; color: #fff; margin: 0 10px;"></i>
-    <div class="profile-container">
-      <img src="user_profile.png" alt="User Profile" width="200" height="200">
-      <p>Hello, <span id="username">Your Name</span> 👋</p>
+    <header class="header">
+        <h1 class="header-title">Nap Nap</h1>
+        <i class="bi bi-person-circle"></i>
+        <div class="profile-container">
+          <img src="user_profile.png" alt="User Profile" class="profile-image">
+          <p>Hello, <span id="username">Your Name</span> 👋</p>
+        </div>
+      </header>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#spaces" class="tab">Espaços</a></li>
+      <li><a href="#people" class="tab">Pessoas</a></li>
+      <li><a href="#reserve" class="tab">Reserva</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="spaces" class="tab-content">
+      <h2>Espaços</h2>
+      <ul>
+        <li>
+          <button class="space-button" data-space="A" data-occupants="2">Bloco A</button>
+          <span class="count">2</span>
+        </li>
+        <li>
+          <button class="space-button" data-space="B" data-occupants="0">Bloco B</button>
+          <span class="count">1</span>
+        </li>
+        <li>
+          <button class="space-button" data-space="C" data-occupants="0">Bloco C</button>
+          <span class="count">1</span>
+        </li>
+        <li>
+          <button class="space-button" data-space="D" data-occupants="0">Bloco D</button>
+          <span class="count">1</span>
+        </li>
+        <li>
+          <button class="space-button" data-space="E" data-occupants="0">Bloco E</button>
+          <span class="count">1</span>
+        </li>
+      </ul>
+      <div id="chat-container" class="chat-container">
+        <div id="chat-header" class="chat-header">
+          <h3 id="chat-title">Bloco A</h3>
+          <button id="close-chat" class="close-chat">X</button>
+        </div>
+        <div id="chat-content" class="chat-content">
+          <!-- Chat messages will be displayed here -->
+        </div>
+        <div id="chat-input" class="chat-input">
+          <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+          <button id="send-message" class="send-message">Enviar</button>
+        </div>
+      </div>
     </div>
-  </header>
-    <nav>
-        <ul>
-            <li><a href="#spaces" class="tab">Espaços</a></li>
-            <li><a href="#people" class="tab">Pessoas</a></li>
-            <li><a href="#reserve" class="tab">Reserva</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div id="spaces" class="tab-content">
-            <h2>Espaços</h2>
-            <ul>
-                <li>Bloco A <span class="count">0</span></li>
-                <li>Bloco B <span class="count">0</span></li>
-                <li>Bloco C <span class="count">0</span></li>
-                <li>Bloco D <span class="count">0</span></li>
-                <li>Bloco E <span class="count">0</span></li>
-            </ul>
-        </div>
-        <div id="people" class="tab-content">
-            <h2>Pessoas</h2>
-            <!-- people list will be displayed here -->
-        </div>
-        <div id="reserve" class="tab-content">
-            <h2>Reserva</h2>
-            <!-- reservation form will be displayed here -->
-        </div>
-    </main>
-    <script src="script.js"></script>
+    <div id="people" class="tab-content">
+      <h2>Pessoas</h2>
+      <ul id="people-list">
+        <li class="person" data-block="A">Bloco A - IA 1</li>
+        <li class="person" data-block="A">Bloco A - IA 2</li>
+        <li class="person" data-block="B">Bloco B - IA 3</li>
+        <li class="person" data-block="C">Bloco C - IA 4</li>
+        <li class="person" data-block="D">Bloco D - IA 5</li>
+        <li class="person" data-block="E">Bloco E - IA 6</li>
+      </ul>
+    </div>
+    <div id="reserve" class="tab-content">
+      <h2>Reserva</h2>
+      <!-- reservation form will be displayed here -->
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
-
 </html>

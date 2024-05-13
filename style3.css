@@ -13,27 +13,31 @@ body {
 
 /* Header Styles */
 
-header {
+.header {
   background-color: #333;
   color: #fff;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px; /* reduziu a altura do header */
+  height: 40px; /* reduced header height */
 }
 
-header h1 {
-  font-size: 18px;
+.header.header-title {
+  font-size: var(--header-font-size); /* define a variable for font size */
   margin: 0;
   padding: 0 10px;
 }
 
-header img {
-  border-radius: 50%;
+:root {
+  --header-font-size: 20px; /* define the variable value */
+}
+
+.bi-person-circle {
+  font-size: 25px;
+  color: #fff;
   margin: 0 10px;
-  width: 25px; /* reduziu o tamanho da imagem */
-  height: 25px;
+  cursor: pointer; /* added cursor pointer for icon */
 }
 
 .profile-container {
@@ -42,7 +46,7 @@ header img {
   margin: 10px;
 }
 
-.profile-container img {
+.profile-image {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -118,28 +122,131 @@ main {
 .tab-content li span.count {
   font-size: 18px;
   font-weight: bold;
-  margin: 0 10px;
 }
 
-/* Active Tab Styles */
-
-.tab-content.active {
-  display: block;
+.header-title {
+  font-size: 25px; /* tamanho de fonte específico para o texto "Nap Nap" */
 }
 
-/* Responsive Styles */
-
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
- .tab-content {
-    padding: 10px;
-  }
+/* Add styles for the people list */
+#people-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.bi-person-circle {
-  font-size: 25px;
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.person:last-child {
+  border-bottom: none;
+}
+/* Add styles for the chat container */
+.chat-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 0;
+}
+
+/* Add styles for the chat container */
+.chat-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 60%;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close-chat {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.close-chat:hover {
+  color: #007bff;
+}
+
+.chat-content {
+  padding: 10px;
+  height: 80%;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#message-input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#message-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.send-message {
+  background-color: #007bff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
   color: #fff;
-  margin: 0 10px;
-  cursor: pointer; /* adiciona um cursor de ponteiro para o ícone */
+  cursor: pointer;
+}
+
+.send-message:hover {
+  background-color: #0069d9;
 }
