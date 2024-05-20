@@ -22,7 +22,17 @@ sendButton.addEventListener('click', () => {
 
         // Simular resposta do servidor
         setTimeout(() => {
-            addMessage('Olá, como posso te ajudar?', false);
+            addMessage('Central de ajuda: Tire suas dúvidas', false);
+            addMessage('Crie sua conta em 3 passos fáceis:', false);
+            addMessage('Preencha seus dados: Nome de usuário (seja criativo!), ', false);
+            addMessage('email (digite corretamente!), confirme seu email, ', false);
+            addMessage('senha (uma senha forte é a chave!), e confirme sua senha.', false);
+            addMessage('Escolha caracteres válidos: Siga as instruções na tela para garantir que seus dados estejam corretos.', false);
+            addMessage('Pronto! Clique em "Cadastrar" e comece a aproveitar o site.', false);
+            addMessage('Seção 1: Cadastro', false);
+            addMessage('Seção 1: Cadastro', false);
+            addMessage('Seção 1: Cadastro', false);
+            addMessage('Seção 1: Cadastro', false);
         }, 1000);
     }
 });
