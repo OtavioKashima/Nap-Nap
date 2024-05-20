@@ -53,12 +53,14 @@ body {
   margin: 10px;
 }
 
-.background-img {
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  margin: 10px;
+body {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/c67340194185933.65f84cc72c416.jpg);
+  background-size:  300px;
+  background-position: center;
+  
+
 }
+
 
 .profile-container p {
   font-size: 18px;
