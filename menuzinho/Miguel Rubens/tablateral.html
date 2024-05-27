@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reusable Sidebar Example</title>
+    <link rel="stylesheet" href="tablateral.css">
+  </head>
+  <body>
+    <div id="sidebar">
+      <div id="sidebar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="sidebar-menu"> 
+        <h2>Espaços</h2>
+        <ul id="sidebar-menu">
+          <li><a href="#bloco-a">Bloco A</a></li>
+          <li><a href="#bloco-b">Bloco B</a></li>
+          <li><a href="#bloco-c">Bloco C</a></li>
+          <li><a href="#bloco-d">Bloco D</a></li>
+          <li><a href="#bloco-e">Bloco E</a></li>
+        </ul>
+        <div id="recent-contacts">
+          <h3>Recent Contacts</h3>
+          <ul id="recent-contacts-list">
+            <li>
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglX7wHsemIjnWJKogcCy1pNvRIYnMWO_DttavYdjYKVKSAAuJIFWVNQeTZUnBOkENndMUnSvZCSQlwAG0IAYvawcOxcrcMVglz73LO-kx8GyyURenQfnoabmGdVWPzZa-LwT4u26xrIHwi/s1280/IMG-20210104-WA0030.jpg" alt="Ash">
+              <div>
+                <span>Ash</span>
+              </div>
+            </li>
+            <li>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeF1wnovQSy1QuyQpb4PTvrWTWLlg4FmOWXtucVqGtfQ&s" alt="Person2">
+              <div>
+                <span>Donkey Kong</span>
+              </div>
+            </li>
+            <li>
+              <img src="https://i.ytimg.com/vi/B_90wtRcvZw/mqdefault.jpg" alt="Person3">
+              <div>
+                <span>Kashima</span>
+              </div>
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/media/F46rCnsXgAADkc_.jpg" alt="Person4">
+              <div>
+                <span>Luffy Fimose Esticada</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul id="sidebar-menu-bottom">
+          <li><a href="#configuracoes">Configurações</a></li>
+          <li><a href="#ajuda">Ajuda</a></li>
+          <li><a href="#" id="contact-btn">Contate-nos</a></li>
+        </ul>
+      </ul>
+    </div>
+
+    <div id="contact-popup" style="display: none;">
+      <div class="popup-header">
+        <h2>Contate-nos</h2>
+        <img src="https://cdn.bulbagarden.net/upload/thumb/4/4a/Snorlax.png/250px-Snorlax.png" alt="Snorlax" class="snorlax">
+      </div>
+      <ul>
+        <li><a href="https://www.instagram.com/your_instagram_username" target="_blank" class="instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram" class="logo">
+          Instagram</a></li>
+        <li><a href="https://wa.me/your_whatsapp_number" target="_blank" class="whatsapp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="logo">
+          WhatsApp</a></li>
+        <li><a href="mailto:your_email_address" class="gmail">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1200px-Gmail_icon_%282020%29.svg.png" alt="Gmail" class="logo">
+          Gmail</a></li>
+      </ul>
+    </div>
+
+    <!-- Adicionei um script para abrir a janela pop-up quando o botão for clicado -->
+    <script>
+      document.getElementById('contact-btn').addEventListener('click', function() {
+        document.getElementById('contact-popup').style.display = 'block';
+      });
+    </script>
+
+    <!-- Rest of the page content goes here -->
+
+    <script src="tablateral.js"></script>
+  </body>
+</html>
