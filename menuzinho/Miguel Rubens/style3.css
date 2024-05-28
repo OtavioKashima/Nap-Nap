@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 40px; /* reduced header height */
+  padding-left: 60px;
 }
 
 .header.header-title {
@@ -74,6 +75,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  padding-left: 60px;
 }
 
 nav ul {
@@ -103,6 +105,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-right:30px
 }
 
 .tab-content {
@@ -258,4 +261,9 @@ main {
 
 .send-message:hover {
   background-color: #0069d9;
+}
+.meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

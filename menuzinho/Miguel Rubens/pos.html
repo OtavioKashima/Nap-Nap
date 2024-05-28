@@ -1,85 +1,154 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nap Nap</title>
-    <link rel="stylesheet" href="style3.css">
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="header-title">Nap Nap</h1>
-      <i class="bi bi-person-circle"></i>
-      <div class="profile-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0z3lB8BaURewBkBjOErOXWAgM8g1-DZSiAakx6czSIQ&s" alt="User Profile" class="profile-image">
-        <p>Hello, <span id="username">Zé Bunequero</span> 👋</p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nap Nap</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="tablateral.css"> <!-- Adicionado -->
+</head>
+
+<body>
+  <div id="sidebar-container"> <!-- Adicionado -->
+    <div id="sidebar"> <!-- Adicionado -->
+      <!-- Sidebar content -->
+      <div id="sidebar-toggle"> <!-- Adicionado -->
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </header>
-    <nav aria-label="Main navigation">
+      <ul id="sidebar-menu">
+        <h2>Espaços</h2>
+        <ul id="sidebar-menu">
+          <li><a href="#bloco-a">Bloco A</a></li>
+          <li><a href="#bloco-b">Bloco B</a></li>
+          <li><a href="#bloco-c">Bloco C</a></li>
+          <li><a href="#bloco-d">Bloco D</a></li>
+          <li><a href="#bloco-e">Bloco E</a></li>
+        </ul>
+        <div id="recent-contacts">
+          <h3>Recent Contacts</h3>
+          <ul id="recent-contacts-list">
+            <li>
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglX7wHsemIjnWJKogcCy1pNvRIYnMWO_DttavYdjYKVKSAAuJIFWVNQeTZUnBOkENndMUnSvZCSQlwAG0IAYvawcOxcrcMVglz73LO-kx8GyyURenQfnoabmGdVWPzZa-LwT4u26xrIHwi/s1280/IMG-20210104-WA0030.jpg"
+                alt="Ash">
+              <div>
+                <span>Ash</span>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeF1wnovQSy1QuyQpb4PTvrWTWLlg4FmOWXtucVqGtfQ&s"
+                alt="Person2">
+              <div>
+                <span>Donkey Kong</span>
+              </div>
+            </li>
+            <li>
+              <img src="https://i.ytimg.com/vi/B_90wtRcvZw/mqdefault.jpg" alt="Person3">
+              <div>
+                <span>Kashima</span>
+              </div>
+            </li>
+            <li>
+              <img src="https://pbs.twimg.com/media/F46rCnsXgAADkc_.jpg" alt="Person4">
+              <div>
+                <span>Luffy Fimose Esticada</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul id="sidebar-menu-bottom">
+          <li><a href="ahhhhh.html">Configurações</a></li>
+          <li><a href="Central.html">Ajuda</a></li>
+          <li><a href="#" id="contact-btn">Contate-nos</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+  <header class="header">
+    <h1 class="header-title">Nap Nap</h1>
+    <i class="bi bi-person-circle"></i>
+    <div class="profile-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0z3lB8BaURewBkBjOErOXWAgM8g1-DZSiAakx6czSIQ&s"
+        alt="User Profile" class="profile-image">
+      <p>Hello, <span id="username">Zé Bunequero</span> 👋</p>
+    </div>
+  </header>
+  <nav aria-label="main navigation">
+    <div class="Meio">
       <ul>
         <li><a href="#spaces" class="tab">Espaços</a></li>
         <li><a href="#people" class="tab">Pessoas</a></li>
         <li><a href="#reserve" class="tab">Reserva</a></li>
       </ul>
-    </nav>
-    <div class="background-img">
     </div>
+  </nav>
+
   <main>
-    <div id="spaces" class="tab-content" class="background-img">
-      <h2>Espaços</h2>
-      <ul>
-        <li>
-          <button class="space-button" data-space="A" data-occupants="2">Bloco A</button>
-          <span class="count">2</span>
-        </li>
-        <li>
-          <button class="space-button" data-space="B" data-occupants="0">Bloco B</button>
-          <span class="count">1</span>
-        </li>
-        <li>
-          <button class="space-button" data-space="C" data-occupants="0">Bloco C</button>
-          <span class="count">1</span>
-        </li>
-        <li>
-          <button class="space-button" data-space="D" data-occupants="0">Bloco D</button>
-          <span class="count">1</span>
-        </li>
-        <li>
-          <button class="space-button" data-space="E" data-occupants="0">Bloco E</button>
-          <span class="count">1</span>
-        </li>
-      </ul>
-      <div id="chat-container" class="chat-container">
-        <div id="chat-header" class="chat-header">
-          <h3 id="chat-title">Bloco A</h3>
-          <button id="close-chat" class="close-chat">X</button>
-        </div>
-        <div id="chat-content" class="chat-content">
-          <!-- Chat messages will be displayed here -->
-        </div>
-        <div id="chat-input" class="chat-input">
-          <input type="text" id="message-input" placeholder="Digite sua mensagem...">
-          <button id="send-message" class="send-message">Enviar</button>
+    <div class="background-img">
+
+      <div id="spaces" class="tab-content" class="background-img">
+        <h2>Espaços</h2>
+        <ul>
+          <li>
+            <button class="space-button" data-space="A" data-occupants="2">Bloco A</button>
+            <span class="count">2</span>
+          </li>
+          <li>
+            <button class="space-button" data-space="B" data-occupants="0">Bloco B</button>
+            <span class="count">1</span>
+          </li>
+          <li>
+            <button class="space-button" data-space="C" data-occupants="0">Bloco C</button>
+            <span class="count">1</span>
+          </li>
+          <li>
+            <button class="space-button" data-space="D" data-occupants="0">Bloco D</button>
+            <span class="count">1</span>
+          </li>
+          <li>
+            <button class="space-button" data-space="E" data-occupants="0">Bloco E</button>
+            <span class="count">1</span>
+          </li>
+        </ul>
+        <div id="chat-container" class="chat-container">
+          <div id="chat-header" class="chat-header">
+            <h3 id="chat-title">Bloco A</h3>
+            <button id="close-chat" class="close-chat">X</button>
+          </div>
+          <div id="chat-content" class="chat-content">
+            <!-- Chat messages will be displayed here -->
+          </div>
+          <div id="chat-input" class="chat-input">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+            <button id="send-message" class="send-message">Enviar</button>
+          </div>
         </div>
       </div>
+      <div id="people" class="tab-content">
+        <h2>Pessoas</h2>
+        <ul id="people-list">
+          <li class="person" data-block="A">Bloco A - IA 1</li>
+          <li class="person" data-block="A">Bloco A - IA 2</li>
+          <li class="person" data-block="B">Bloco B - IA 3</li>
+          <li class="person" data-block="C">Bloco C - IA 4</li>
+          <li class="person" data-block="D">Bloco D - IA 5</li>
+          <li class="person" data-block="E">Bloco E - IA 6</li>
+        </ul>
+      </div>
+      <div id="reserve" class="tab-content">
+        <h2>Reserva</h2>
+        <!-- reservation form will be displayed here -->
+      </div>
     </div>
-    <div id="people" class="tab-content">
-      <h2>Pessoas</h2>
-      <ul id="people-list">
-        <li class="person" data-block="A">Bloco A - IA 1</li>
-        <li class="person" data-block="A">Bloco A - IA 2</li>
-        <li class="person" data-block="B">Bloco B - IA 3</li>
-        <li class="person" data-block="C">Bloco C - IA 4</li>
-        <li class="person" data-block="D">Bloco D - IA 5</li>
-        <li class="person" data-block="E">Bloco E - IA 6</li>
-      </ul>
-    </div>
-    <div id="reserve" class="tab-content">
-      <h2>Reserva</h2>
-      <!-- reservation form will be displayed here -->
-    </div>
+
   </main>
+  <script src="tablateral.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
