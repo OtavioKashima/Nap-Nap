@@ -144,6 +144,36 @@
         <h2>Reserva</h2>
         <!-- reservation form will be displayed here -->
       </div>
+      <div id="contact-popup" style="display: none;">
+        <div class="popup-header">
+          <h2>Contate-nos</h2>
+          <img src="https://cdn.bulbagarden.net/upload/thumb/4/4a/Snorlax.png/250px-Snorlax.png" alt="Snorlax" class="snorlax">
+          <span class="close-btn">X</span> <!-- Adicionei um botão de fechar -->
+        </div>
+        <ul>
+          <li><a href="https://www.instagram.com/your_instagram_username" target="_blank" class="instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram" class="logo">
+            Instagram</a></li>
+          <li><a href="https://wa.me/your_whatsapp_number" target="_blank" class="whatsapp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="WhatsApp" class="logo">
+            WhatsApp</a></li>
+          <li><a href="mailto:your_email_address" class="gmail">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1200px-Gmail_icon_%282020%29.svg.png" alt="Gmail" class="logo">
+            Gmail</a></li>
+        </ul>
+      </div>
+      
+      <!-- Adicionei um script para abrir a janela pop-up quando o botão for clicado -->
+      <script>
+        document.getElementById('contact-btn').addEventListener('click', function() {
+          document.getElementById('contact-popup').style.display = 'block';
+        });
+      
+        // Adicionei um script para fechar a janela pop-up quando o botão de fechar for clicado
+        document.querySelector('.close-btn').addEventListener('click', function() {
+          document.getElementById('contact-popup').style.display = 'none';
+        });
+      </script>
     </div>
 
   </main>
